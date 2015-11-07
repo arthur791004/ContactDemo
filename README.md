@@ -6,6 +6,7 @@ modify contact in mobile device using ionic
 $ bower install && npm install
 ```
 ## Bower Plugins
+* ngCordova
 * ionic-filter-bar
 
 ## Cordova Plugins
@@ -23,6 +24,7 @@ $ ionic build
 ```
 
 ## Reference
+* http://ngcordova.com/docs/install/
 * https://github.com/apache/cordova-plugin-contacts
 * https://github.com/djett41/ionic-filter-bar
 
