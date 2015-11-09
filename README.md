@@ -3,7 +3,7 @@ modify contact in mobile device using ionic
 
 ## Installation
 ```shell
-$ bower install && npm install
+$ bower install
 ```
 ## Bower Plugins
 * ngCordova
