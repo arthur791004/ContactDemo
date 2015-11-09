@@ -1,0 +1,12 @@
+{
+  "name": "YoutubeSearch",
+  "private": "true",
+  "devDependencies": {
+    "ionic": "driftyco/ionic-bower#master"
+  },
+  "dependencies": {
+    "angular-translate": "~2.8.1",
+    "ionic-filter-bar": "~1.1.1",
+    "ngCordova": "~0.1.20-alpha"
+  }
+}

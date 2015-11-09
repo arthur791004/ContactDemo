@@ -1,0 +1,27 @@
+<ion-modal-view>
+  <ion-nav-bar align-title="left" class="bar-positive">
+    <ion-nav-buttons side="left">
+      <button class="button button-clear button-icon ion-arrow-left-c" ng-click="viewModel.closeAddContactModal()"></button>
+    </ion-nav-buttons>
+    <ion-nav-title class="bar">
+      <a class="title">{{ ::'ADD_TITLE' | translate }}</a>
+    </ion-nav-title>
+    <ion-nav-buttons side="right">
+        <button class="button button-clear" ng-click="viewModel.addContact()">
+          {{ ::'ADD_CONFIRM' | translate }}
+        </button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+  <ion-content class="has-header">
+    <div class="list">
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">{{ ::'CONTACT_NAME' | translate }}</span>
+        <input type="text" ng-model="viewModel.newContact.displayName" placeholder="{{ ::'ENTER_CONTACT_NAME' | translate }}">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">{{ ::'CONTACT_PHONE' | translate }}</span>
+        <input type="text" ng-model="viewModel.newContact.mobilePhone" placeholder="{{ ::'ENTER_CONTACT_PHONE' | translate }}">
+      </label>
+    </div>
+  </ion-content>
+</ion-modal-view>

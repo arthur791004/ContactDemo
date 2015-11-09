@@ -1,0 +1,15 @@
+<ion-view title="Contacts Demo ({{ viewModel.listContacts.length }})">
+  <ion-nav-buttons side="right">
+    <button class="button button-icon ion-search" ng-click="viewModel.showFilterBar()"></button>
+    <button class="button button-icon ion-person-add" ng-click="viewModel.openAddContactModal()"></button>
+  </ion-nav-buttons>
+  <ion-content>
+    <ion-list">
+      <ion-item class="item item-avatar" collection-repeat="contact in viewModel.listContacts track by $index">
+        <img src="{{ contact.avatar }}">
+        <h2>{{ contact.displayName || contact.nickname }}</h2>
+        <p>{{ contact.mobilePhone }}</p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
